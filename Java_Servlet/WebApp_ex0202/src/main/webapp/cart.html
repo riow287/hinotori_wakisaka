@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>個数指定</title>
+</head>
+<body>
+	<p>エクセレントミネラルウォーター1ケース（24本セット）</p>
+	<p>通常価格: 10,000円</p>
+	<ul>
+		<li>5ケース以上・・・1ケースあたり 10％OFF</li>
+		<li>8ケース以上・・・1ケースあたり 15％OFF</li>
+	</ul>
+	<form action="/WebApp_ex0202/price-calc-servlet" method="POST">
+		個数（ケース）: <select name="quantity">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select> 
+		<input type="submit" value="代金を計算する">
+	</form>
+</body>
+</html>
